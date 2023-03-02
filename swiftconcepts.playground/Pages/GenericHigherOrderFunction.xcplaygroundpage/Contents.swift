@@ -60,3 +60,7 @@ let myreduce = [1,2,3,4,5].myReduce(2) { result, element in
 [1,2,3,4,5].reduce(100) { partialResult, eachElement in
     partialResult + eachElement
 }
+
+[1,2,4,5].map { (eachElement) in
+    return eachElement * 2
+}

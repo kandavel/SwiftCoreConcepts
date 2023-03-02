@@ -2,50 +2,47 @@
 
 import Foundation
 
-var greeting = "Hello, playground"
+//printing prime  numbers
 
-//: [Next](@next)
-protocol ViewModelDelegate : class {
-    func add()
-    func multiplyIntegers()
-}
-extension ViewModelDelegate {
-    func  multiplyIntegers() {}
-}
-
-class A : ViewModelDelegate {
-    func add() {
+////// FIXME: -
+//3,7,5,1,2
+func printPrimeNumber(number :  Int) -> Bool {
+    
+   let reminder  = number / 2
+    let mod  =  number  % 2
+    if mod == 0 {
         
     }
-}
-//SolidPrinciple
-
-extension Collection {
-    
-    func myMap<T>(_ tranform : (Element) -> T) ->  [T] {
-        var result : [T] = []
-        for eachItem in self {
-            result .append( tranform(eachItem))
-        }
-        return result
+    else {
+        
     }
+    return true
 }
 
-//Dispatch group
-//Dispatch group notify
-
-let group  = DispatchGroup()
-group.enter()
-URLSession.shared.dataTask(with: URLRequest(url: URL(string: "www.google.com")!))
-group.wait()
-
-
-group.enter()
-URLSession.shared.dataTask(with: URLRequest(url: URL(string: "www.fb.com")!))
-group.wait()
-
-
-group.notify(queue: .main) {
-    //reload data
+//Printing CommonCharacters
+let array  =  ["suman","sunil","sujith"]
+func printCommonCharacters(list  : [String]) -> String {
+    var commonPrefix  = ""
+    var smallestString  =  ""
+    smallestString =  array.min { (element1,element2) in
+        return element1.count < element2.count
+    } ?? ""
+    
+    print(smallestString)
+    for eachChar  in smallestString {
+        for eachString  in  list {
+            for eachStringChar in eachString {
+                if eachChar == eachStringChar {
+                    let stringChar  =  String(eachChar)
+                    commonPrefix.append(stringChar)
+                }
+            }
+        }
+    }
+    return commonPrefix
 }
-//Urlsession
+printCommonCharacters(list: array)
+
+
+
+//nitin.

@@ -3,5 +3,19 @@
     <pages>
         <page name='GenericHigherOrderFunction'/>
         <page name='GCD'/>
+        <page name='AddtionOfTwoValues'/>
+        <page name='NsoperationQueue'/>
+        <page name='Intuit'/>
+        <page name='TableViewWorks'/>
+        <page name='WeakVsStrong'/>
+        <page name='Closure'/>
+        <page name='Actor'/>
+        <page name='Untitled Page'/>
+        <page name='Locus'/>
+        <page name='Duplicate'/>
+        <page name='GCD InterViewQuestion'/>
+        <page name='PrivateQueues'/>
+        <page name='Disbarrier+DisWorkItem+DispatchSemaphore'/>
+        <page name='Chin'/>
     </pages>
 </playground>
