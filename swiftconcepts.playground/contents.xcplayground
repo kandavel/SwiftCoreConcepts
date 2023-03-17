@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
     <pages>
-        <page name='GenericHigherOrderFunction'/>
+        <page name='GHOF'/>
         <page name='GCD'/>
         <page name='AddtionOfTwoValues'/>
         <page name='NsoperationQueue'/>
@@ -17,5 +17,10 @@
         <page name='PrivateQueues'/>
         <page name='Disbarrier+DisWorkItem+DispatchSemaphore'/>
         <page name='Chin'/>
+        <page name='SystemDesignPattern'/>
+        <page name='DI'/>
+        <page name='ArrayOfWeakClass'/>
+        <page name='LetVar'/>
+        <page name='Protocol'/>
     </pages>
 </playground>
