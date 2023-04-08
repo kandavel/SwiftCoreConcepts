@@ -22,5 +22,10 @@
         <page name='ArrayOfWeakClass'/>
         <page name='LetVar'/>
         <page name='Protocol'/>
+        <page name='GCD-InterviewTopics'/>
+        <page name='Fi'/>
+        <page name='NewOne'/>
+        <page name='LinkedList'/>
+        <page name='kart'/>
     </pages>
 </playground>
