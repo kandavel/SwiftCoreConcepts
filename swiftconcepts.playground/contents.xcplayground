@@ -27,5 +27,12 @@
         <page name='NewOne'/>
         <page name='LinkedList'/>
         <page name='kart'/>
+        <page name='PrpopertyWrapper'/>
+        <page name='Defer'/>
+        <page name='PInHeritance'/>
+        <page name='kart1'/>
+        <page name='Sapient'/>
+        <page name='Untitled Page 2'/>
+        <page name='GenericSingleTon'/>
     </pages>
 </playground>

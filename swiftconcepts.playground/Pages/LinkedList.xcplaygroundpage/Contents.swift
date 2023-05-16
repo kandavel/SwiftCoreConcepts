@@ -81,8 +81,86 @@ class MylinkedList {
             }
             current  = current?.next
         }
-      return nil
+        return nil
     }
     
     
 }
+
+
+
+
+class LinkedNode<T> {
+    var next: LinkedNode<T>?
+    var value: T
+    
+    init(next: LinkedNode<T>?, value: T) {
+        self.next = next
+        self.value = value
+    }
+    
+    func printList() {
+        var currentNode = self
+        print(value)
+        while currentNode.next != nil {
+            print("Current NodeValue ::\(currentNode.value)")
+            currentNode = currentNode.next!
+            print("1Current NodeValue ::\(currentNode.value)")
+        }
+    }
+    
+}
+
+func reverseList(_ head: LinkedNode<Int>?) -> LinkedNode<Int>? {
+    var previousNode: LinkedNode<Int>? = nil
+    var currentNode = head
+    while currentNode != nil {
+        print("previous node address :: \(previousNode)\n")
+        print("CurrentNode  \(currentNode) Value :: \(String(describing: currentNode?.value))\n")
+        let nextNode = currentNode?.next
+        print("NextNode  \(nextNode) Value :: \(String(describing: nextNode?.value))\n")
+        currentNode?.next = previousNode
+        previousNode = currentNode
+        currentNode = nextNode
+    }
+    return previousNode
+}
+
+//let linkedNode5 = LinkedNode(next: nil, value: 5)
+//let linkedNode4 = LinkedNode(next: linkedNode5, value: 3)
+//let linkedNode3 = LinkedNode(next: linkedNode4, value: 2)
+//let linkedNode2 = LinkedNode(next: linkedNode3, value: 2)
+//let linkedListRoot = LinkedNode(next: linkedNode2, value: 1)
+//linkedListRoot.printList()
+//reverseList(linkedListRoot)?.printList()
+
+
+
+func middleNodedetect(_ head: LinkedNode<Int>?) -> LinkedNode<Int>? {
+    var (fast,slow) = (head, head)
+    
+    while(fast?.next != nil) {
+        print("")
+        print("Before Node manipulation \(fast?.value) \n")
+        print("Before Node slow manipulation \(slow?.value) \n")
+        fast = fast?.next?.next
+        slow = slow?.next
+        
+        print("After Node manipulation")
+        print("Before Node Fast manipulation \(fast?.value) \n")
+        print("After Node  slow manipulation \(slow?.value) \n")
+    }
+    
+    return slow
+}
+
+let linkedNode5 = LinkedNode(next: nil, value: 5)
+let linkedNode4 = LinkedNode(next: linkedNode5, value: 3)
+let linkedNode3 = LinkedNode(next: linkedNode4, value: 9)
+let linkedNode2 = LinkedNode(next: linkedNode3, value: 2)
+
+let linkedListRoot = LinkedNode(next: linkedNode2, value: 1)
+
+
+let middleNode  = middleNodedetect(linkedListRoot)
+middleNode?.value

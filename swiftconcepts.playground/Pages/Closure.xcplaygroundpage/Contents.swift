@@ -14,7 +14,7 @@ closure()
 
 import Foundation
 
-class Person {
+struct Person {
     var name: String
     init(_ name: String) {
         self.name = name
